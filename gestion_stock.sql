@@ -12,6 +12,9 @@ SET time_zone = "+00:00";
 --
 -- Base de données : `gestion_stock_dclic`
 --
+DROP DATABASE IF EXISTS gestion_stock_dclic;
+CREATE DATABASE IF NOT EXISTS gestion_stock_dclic;
+USE gestion_stock_dclic;
 
 -- --------------------------------------------------------
 --
@@ -377,6 +380,7 @@ CREATE TABLE contact (
   `nom` VARCHAR(2) NOT NULL,
   `prenom` VARCHAR(3) NOT NULL,
   `email` VARCHAR(4) NOT NULL,
+  `numero_de_téléphone` VARCHAR(4) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE = InnoDB;
 
